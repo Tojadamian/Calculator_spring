@@ -1,0 +1,11 @@
+<!-- fragments/navbar.html -->
+<nav class="nav-switcher" th:fragment="navbar(activePage)">
+    <a th:href="@{/calculator}"
+       th:classappend="${activePage} == 'calculator' ? 'active'">
+        <i class="bi bi-calculator"></i> Calculator
+    </a>
+    <a th:href="@{/currencies}"
+       th:classappend="${activePage} == 'currencies' ? 'active'">
+        <i class="bi bi-currency-exchange"></i> Currencies
+    </a>
+</nav>
