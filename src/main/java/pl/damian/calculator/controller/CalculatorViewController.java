@@ -16,7 +16,7 @@ public class CalculatorViewController {
         this.calculatorService = calculatorService;
     }
 
-    @GetMapping("/")
+    @GetMapping({"/", "/calculator"})
     public String showCalculator(){
         return "calculator";
     }
